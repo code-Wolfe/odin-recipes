@@ -1,44 +1,56 @@
-.body{
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
-    color: #333;
-    background:  linear-gradient(to right, #7c917c, #ffffff) 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-
-    font-size: 2em;
-    margin-bottom: 0.5em;
+.card{
+    width: auto;
+    height: 100vh;
+    margin: 16px auto;
     text-align: center;
-    background-color: gray;
+    padding: 8px;
+    background: #FFEEA9;
     
 }
 
-ul{
-    list-style-type: disc;
-    margin-left: 20px;
-}
-ol{
-    list-style-type: decimal;
-    margin-left: 20px;
-}
-
-li{
-    background-color: grey;
-}
-
-img{
-    max-width: 100%;
-    height:auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.title{
+    background: #FFBF78;
+    color:#FF7D29;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    
 }
 
 .home-list{
-    font-size: 50px;
-
+    background-color:#FEFFD2;
+    list-style-type: none;
+    margin-bottom: 10px;
+    
+    
 }
 
+ul,ol{
+    display: inline-block;
+    padding: 15px;
+    list-style-type: none;
+    
+}
+li{
+    padding: 15px;
+    font-size: 2em;
+
+    
+}
+
+.home-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #FF7D29; /* Link text color */
+    display: block; /* Make the link take up the whole list item */
+}
+
+/* Hover effect for list items */
+.home-list li:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
